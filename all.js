@@ -147,6 +147,10 @@ let app = new Vue({
         encoder() {
             let vm = this;
             let output = [];
+            
+            if(!vm.insert){
+                return
+            }
 
             vm.insert.toLowerCase().split('').forEach((el) => {
                 output.push(vm.morseCodeAlpha[el]);
