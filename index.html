@@ -96,8 +96,8 @@
                 </div>
             </div>
             <div class="stack-ctrl">
-                <a @click="emittarget" href="#"><i class="fas fa-times fs-2 text-danger"></i></a>
-                <a @click="emitsound" href="#"><i class="fas fa-volume-up text-light"></i></a>
+                <a @click.prevent="emittarget" href="#"><i class="fas fa-times fs-2 text-danger"></i></a>
+                <a @click.prevent="emitsound" href="#"><i class="fas fa-volume-up text-light"></i></a>
             </div>
         </li>
     </script>
